@@ -1,0 +1,12 @@
+//psuedocode
+char a[26] = ['a', 'b', 'c'..] //letter array
+char str[16]; //word container
+int len = rand()%16+1; //generate length of string
+int i; //iterator
+for (i = 0; i < len; i++){
+  str[i] = array[(rand()%26)]; //generate random number between 0 and 26 as index of array of letters, plug into string at current position
+  file.write(str); //research how to write to a file descriptor. use man. (man fputs, type in terminal, read. also read man fgets)
+}
+
+str[len] = '\0'; //always do this after your loop. just trust me.
+len = 0;
