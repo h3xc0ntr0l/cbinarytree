@@ -1,12 +1,13 @@
-make collin:
+collin:
 	gcc main.c -o collin
-	echo 'making collins files complete.'
 
-make binarytree:
-	gcc binarytree.c btreeimp.c -o bt
-	echo 'making michaels files complete'
+binarytree:
+	gcc binarytree.c btreeimp.c -o btree
 
-make all:
+numbergen:
+	gcc numbergen.c -o numbergen
+
+all:
 	gcc main.c -o collin
-	gcc binarytree.c btreeimp.c -o bt
-
+	gcc binarytree.c btreeimp.c -o btree
+	gcc numbergen.c -o numbergen

@@ -19,6 +19,7 @@ void hang_node(NODE *root, NODE *ptr){
       } else {
         tmp->right = ptr;
         ptr = tmp->right;
+        return;
       }
     } else if (ptr->key <= tmp->key){
       if (tmp->left){
@@ -26,6 +27,7 @@ void hang_node(NODE *root, NODE *ptr){
       } else {
         tmp->left = ptr;
         ptr = tmp->left;
+        return;
       }
     }
   }

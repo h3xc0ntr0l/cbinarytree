@@ -1,8 +1,0 @@
-hello
-one
-two
-three
-world
-sup
-bro
-hi

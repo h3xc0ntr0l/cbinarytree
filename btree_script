@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#here's an example of a shell script for ya bub C:
+
+echo "making all the files. type cat Makefile in your terminal to see what i'm doing"
+make all
+
+echo "generating list of numbers and sending to file 'numbers.txt'"
+./numbergen > numbers.txt
+echo "done generating. now lets put them into the binary tree."
+./btree numbers.txt
